@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="ts/index.js"></script>
+</head>
+<body>
+    <div class="container" id="ul">
+        <ul class="ul">
+            <li onclick="home()"><a href="#">Home</a></li>
+            <li onclick="medicine()"><a href="#">Medicine Details</a></li>
+            <li onclick="purchase()"><a href="#">Purchase</a></li>
+            <li onclick="cancel()"><a href="#">Cancel</a></li>
+            <li onclick="recharge()"><a href="#">Recharge</a></li>
+            <li onclick="showbalance()"><a href="#" >Show Balance </a></li>
+            <li onclick="orderhistory()"><a href="#">Order History</a></li>
+        </ul>
+    </div>
+    <div class="balance">
+        <p class="balance" id="balance1" style="display: none;"></p>
+    </div>
+    <!-- medicine details -->
+    <div class="medicine" id="medicineid">
+        <table id="medicineid">
+        </table>
+
+    </div>
+    <div id="edit">
+        <label>Medicine Name</label>
+        <br>
+        <input type="text" id="ename">
+        <br>
+        <label>Medicine Count</label>
+        <br>
+        <input type="text" id="ecount">
+        <br>
+        <label>Medicine Price</label>
+        <br>
+        <input type="text" id="eprice">
+        <br>
+        <label>Expiary Date</label>
+        <br>
+        <input type="date" id="edate">
+        <br>
+        <input type="submit" value="submit" onclick="editing()">
+    </div>
+    <!---->
+    <div class="home">
+        <p class="home" id="home"></p>
+    </div>
+    <!-- Recharge-->
+    <div class="recharge" id="recharge1">
+        <input type="number" name="" id="inputrecharge">
+        <input type="submit" value="clickme" onclick="recharges()">
+    </div>
+  <!-- medicine -->
+  <div class="medicine" id="medicine1">
+    <table class="med"  >
+        <thead>
+            <tr>
+                <th>Medicine Name</th>
+                <th>Medicine Count</th>
+                <th>Medicine Price</th>
+                <th>Expiray Date</th>
+                <th>Action</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="med1">
+
+        </tbody>
+    </table>
+    <br>
+</div>
+    <!--Purchase-->
+    <div class="purchase" id="purchase1">
+            <table class="table"  >
+                <tr>
+                    <th>medicine name</th>
+                    <th>count</th>
+                    <th>price</th>
+                    <th>expiry date</th>
+                    <th>modify</th>
+                </tr>
+                <tbody id="table1">
+
+                </tbody>
+            </table>
+            <br>
+    </div>
+    <!-- Cancel Order-->
+    <div class="cancel" id="cancel1">
+        <table class="ctable" >
+            <thead>
+                <th>medicineName</th>
+                <th>orderCount</th>
+                <th>orderPrice</th>
+                <th>Order Status</th>
+                <th>Action</th>
+            </thead>
+            <tbody id="ctable1">
+
+            </tbody>
+        </table>
+    </div>
+    <!--order history-->
+    <div class="history" id="history1">
+        <table class="htable" >
+            <thead>
+                <tr>
+                    <th>Medicine Name</th>
+                    <th>Medicine Count</th>
+                    <th>Medicine Price</th>
+                    <th>Order Status</th>
+                </tr>
+                <tbody id="htable1">
+
+                </tbody>
+            </thead>
+        </table>
+    </div>
+    <div id="quantity">
+        <div>
+            <label for="quantity1">Enter quantity</label>
+        </div>
+        <div>
+            <input type="number" id="quantity1">
+        </div>
+        <div>
+            <button onclick="quantity()">but</button>
+        </div>
+    </div>
+    <div class="wrapper" id="wrapper">
+    <div class="btn" id="btn">
+        <button onclick="signup()" id="up">Sign Up</button>
+        <button onclick="signin()" id="in">SignIn</button>
+    </div>
+    <div class="signup" id="signup" >
+        <form action="" onsubmit="subsignup(event)">
+            <label for="name">Name</label>
+            <br>
+            <input type="text" placeholder="enter text here" id="name">
+            <br>
+            <label for="email">email</label>
+            <br>
+            <input type="text" id="email" placeholder="enter text here">
+            <br>
+            <label for="phone">Phone</label>
+            <br>
+            <input type="text" id="phone" placeholder="enter text here">
+            <br>
+            <label for="balance">Balance</label>
+            <br>
+            <input type="number" id="balance" placeholder="enter text here">
+            <br>
+            <label for="password">Password</label>
+            <br>
+            <input type="password" id="password" placeholder="enter text here">
+            <br>
+            <input type="submit" value="submit" >
+        </form>
+    </div>
+    <div class="signin" id="signin" >
+        <form action="" onsubmit="subsignin(event)">
+            <br>
+            <label for="email1">Email</label>
+            <br>
+            <input type="text" id="email1" placeholder="enter email">
+            <br>
+            <label for="password1">Password</label>
+            <br>
+            <input type="password" id="password1" placeholder="enter password">
+            <br>
+            <input type="submit" value="submit" >
+       </form>
+    </div>
+</body>
+</html>

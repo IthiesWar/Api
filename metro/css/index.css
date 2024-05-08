@@ -1,0 +1,120 @@
+#signup
+{
+    display: block;
+}
+#signin
+{
+    display: none;
+}
+#container
+{
+    display: block;
+    border: 2px;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    justify-content: center;
+    margin-left: 40%;
+    width: 200px;
+    padding: 5px;
+    text-align: center;
+    margin-top: 30vh;
+    background-color: rgb(171, 171, 221);
+}
+#nav
+{
+    display: none;
+    border: 2px;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    background-color: rgb(171, 171, 221);
+
+}
+#nav-ul
+{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+#home1
+{
+    text-align: center;
+    color:  rgb(65, 65, 209);
+    font-weight: bold;
+    font-size: 20px;
+}
+#home
+{
+    display: none;
+
+}
+#balancediv
+{
+    text-align: center;
+    color:  rgb(65, 65, 209);
+    font-weight: bold;
+    font-size: 20px;
+    display: none;
+}
+#Recharge
+{
+    display: none;
+    margin-left: 40%;
+}
+#Btable
+{
+    border: 2px;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+}
+#tickets
+{
+    display: none;
+    margin-left: 40%;
+   
+}
+#tickets th,td
+{
+    border: 2px;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    background-color: antiquewhite;
+}
+#bookings
+{
+    display: none;
+    margin-left: 40%;
+}
+#booking table,thead,tbody,th
+{
+    border: 2px;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    background-color: antiquewhite;
+}
+#getquantity
+{
+    display: none;
+}
+#history
+{
+    display: none;
+    margin-left: 40%;
+}
+#history th,td
+{
+    border: 2px;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    background-color: antiquewhite;
+}
+#buy
+{
+    background-color: antiquewhite;
+    border: none;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="ts/index.js"></script>
+</head>
+<body>
+    <div id="container">
+    <div>
+       <input type="button" value="Signup" onclick="signup()">
+       <input type="button" value="Signin" onclick="signin()">
+    </div>
+    <div id="signup">
+        <label for="name">Name</label>
+        <br>
+        <input type="text" placeholder="enter text here" id="name">
+        <br>
+        <label for="email">Email</label>
+        <br>
+        <input type="text" placeholder="enter text here" id="email">
+        <br>
+        <label for="balance">Balance</label>
+        <br>
+        <input type="number" placeholder="enter text here" id="balance">
+        <br>
+        <label for="phone">Phone</label>
+        <br>
+        <input type="text" placeholder="enter text here" id="phone">
+        <br>
+        <label for="password">Password</label>
+        <br>
+        <input type="password" placeholder="enter text here" id="password">
+        <br>
+        <input type="submit" value="Signup" id="submit" onclick="subsignup()">
+    </div>
+    <div id="signin">
+        <label for="email">Email</label>
+        <br>
+        <input type="email" placeholder="enter email here" id="s-email">
+        <br>
+        <label for="password">Password</label>
+        <br>
+        <input type="password" placeholder="enter password here" id="s-password">
+        <br>
+        <input type="button" value="submit" id="submit" onclick="subsignin()">
+    </div>
+</div>
+<div id="nav">
+<ul id="nav-ul">
+    <li onclick="home()" type="button">Home</li>
+    <li onclick="showbalance()" type="button">Show Balance</li>
+    <li onclick="recharge()" type="button">Recharge</li>
+    <li onclick="tickets()" type="button">Tickt Fair</li>
+    <li onclick="booking()" type="button">Book Tickets</li>
+    <li onclick="historys()" type="button">Travel History</li>
+</ul>
+</div>
+</body>
+</html>
+<!-- Home -->
+<div id="home1">
+</div>
+<!-- Show Balance -->
+<div id="balancediv">
+</div>
+<!-- Recharge -->
+<div id="Recharge">
+<p>Enter amount here</p>
+<input type="number" placeholder="enter text here" id="amt">
+<input type="submit" value="submit" onclick="topup()">
+</div>
+<!-- Tickets-->
+<div id="tickets">
+<table >
+    <thead>
+        <th>From Location</th>
+        <th>To Location</th>
+        <th>Ticket Price</th>
+      
+</thead>
+<tbody id="table">
+
+</tbody>
+</table>
+</div>
+<!-- Booking -->
+<div id="bookings">
+    <table>
+        <thead>
+                <th>From Location</th>
+                <th>To Location</th>
+                <th>Ticket Price</th>
+                <th>Action</th>
+        </thead>
+        <tbody id="Btable">
+
+        </tbody>
+    </table>
+</div>
+<div id="getquantity">
+    <p>Enter how many tickets you need</p>
+    <input type="text" id="buytickets">
+    <input type="button" value="submit" onclick="getticket()">
+</div>
+<!-- history -->
+<div id="history">
+<table >
+    <thead>
+        <th>From Location</th>
+        <th>To Location</th>
+        <th>Ticket Price</th>
+        <th>Action</th>
+</thead>
+<tbody id="htable">
+
+</tbody>
+</table>
+</div>

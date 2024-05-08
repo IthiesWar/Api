@@ -1,0 +1,137 @@
+*
+{
+    margin: 0;
+}
+.wrapper
+{
+    border: 1px;
+    border-width: 1px;
+    border-color: black;
+    background-color: rgb(128, 128, 219);
+    border-style: solid;
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 15%;
+   text-align: center;
+    justify-content: center;
+}
+.signin
+{
+  
+    text-align: center;
+    display: none;
+}
+.signup
+{
+   
+    text-align: center;
+    display: block;
+}
+.btn
+{
+    text-align: center;
+}
+.btn #up:hover
+{
+    background-color: goldenrod;
+}
+.btn #in:hover
+{
+    background-color: goldenrod;
+}
+.ul
+{
+    
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+   
+}
+.ul a
+{
+    text-decoration: none;
+    color: black;
+}
+.ul a:hover
+{
+    background-color: goldenrod;
+}
+.container
+{
+    display: none;
+    background-color: rgb(128, 128, 219);
+    padding: 6px;
+}
+.balance
+{
+    color: black;
+    font-size: 40px;
+    text-align: center;
+}
+.home
+{
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    
+}
+
+.recharge
+{
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    display: none;
+}
+.purchase
+{
+    display: none;
+}
+#quantity
+{
+    display: none;
+}
+.medicine
+{
+    display: none;
+}
+.cancel
+{
+    display: none;
+}
+.history
+{
+    display: none;
+}
+#edit
+{
+    display: none;
+}
+.medicine td,th
+{
+    border: 2px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+}
+.purchase td,th
+{
+    border: 2px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+}
+.cancel td,th
+{
+    border: 2px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+}
+.history td,th
+{
+    border: 2px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+}

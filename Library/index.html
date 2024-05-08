@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="ts/index.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="signin_signup">
+            <input type="button" value="signup" onclick="signup()">
+            <input type="button" value="signin" onclick="signin()">
+        </div>
+        <div id="signup">
+            <label for="name">Name</label>
+            <br>
+            <input type="text" placeholder="enter your name" id="name">
+            <br>
+            <label for="gender">Gender</label>
+            <br>
+            <input type="text" placeholder="enter your gender" id="gender">
+            <br>
+            <label for="department">Department</label>
+            <br>
+            <input type="text" placeholder="enter your department" id="department">
+            <br>
+            <label for="phone">Phone</label>
+            <br>
+            <input type="text" placeholder="enter your phone" id="phone">
+            <br>
+            <label for="mail">Mail</label>
+            <br>
+            <input type="text" placeholder="enter your mail" id="mail">
+            <br>
+            <label for="balance">Balance</label>
+            <br>
+            <input type="text" placeholder="enter your balance" id="balance">
+            <br>
+            <label for="password">Password</label>
+            <br>
+            <input type="text" placeholder="enter your password" id="password">
+            <br>
+            <input type="submit" value="submit" onclick="sign_up()">
+        </div>
+        <div id="signin">
+            <label for="email1">Email</label>
+            <br>
+            <input type="text" placeholder="enter your email" id="email1">
+            <br>
+            <label for="password1">Password</label>
+            <br>
+            <input type="text" placeholder="enter your password" id="password1">
+            <br>
+            <input type="submit" value="submit" onclick="sign_in()">
+        </div>
+    </div>
+    <!--- home -->
+    
+    <div id="nav">
+        <ul>
+            <li onclick="home()">Home</li>
+            <li onclick="balance()">Balance</li>
+            <li onclick="recharge()">Recharge</li>
+            <li onclick="borrow()">Borrow Book</li>
+            <li onclick="Borrow_history()">Borrow History</li>
+            <li onclick="return_book()">Return Book</li>
+        </ul>
+    </div>
+    <div id="home">
+    </div>
+    <!-- balance -->
+    <div id="C_balance">
+
+    </div>
+    <!-- recharge -->
+    <div id="recharge">
+        <p>Enter your amount</p>
+        <input type="number" id="recharge_amt">
+        <input type="submit" value="submit" onclick="recharge_amount()">
+    </div>
+    <!-- Borrowed History -->
+    <div id="B_history">
+        <table  >
+            <thead>
+                <tr>
+                    <th>Book ID</th>
+                    <th>User ID</th>
+                    <th>Borrow Date</th>
+                    <th>Book Count</th>
+                    <th>Paid Fine</th>
+                    <th>Status</th>
+                </tr>
+                <tbody id="B_table1">
+
+                </tbody>
+            </thead>
+        </table>
+    </div>
+    <!-- Borrow Book -->
+    <div id="Borrow_book">
+        <table  >
+            <thead>
+                <tr>
+                    <th>Book ID</th>
+                    <th>Book name</th>
+                    <th>Author Name</th>
+                    <th>Book Count</th>
+                </tr>
+                <tbody id="Borrow_table1">
+
+                </tbody>
+            </thead>
+        </table>
+        <br>
+        <div>
+        <p>enter the user book id</p>
+        <input type="text" placeholder="enter the text here" id="book_id">
+        <input type="submit" onclick="bookid_check()">
+         </div>
+         <div id="b_count">
+            <p>enter the book count</p>
+            <input type="text" placeholder="enter the text here" id="book_count">
+            <input type="submit" onclick="book_count()">
+         </div>
+    </div>
+    <div id="return_book">
+        <table  >
+            <thead>
+                <tr>
+                    <th>Book ID</th>
+                    <th>User ID</th>
+                    <th>Borrow Date</th>
+                    <th>Book Count</th>
+                    <th>Paid Fine</th>
+                    <th>Status</th>
+                </tr>
+                <tbody id="r_table1">
+
+                </tbody>
+            </thead>
+        </table>
+    </div>
+    <div id="return">
+        <label>BorrowID</label>
+        <br>
+        <input type="text" id="rborrowkid">
+        <br>
+        <label>BookID</label>
+        <br>
+        <input type="text" id="rbookid">
+        <br>
+        <label>UserID</label>
+        <br>
+        <input type="text" id="ruserid">
+        <br>
+        <label>Borrow Date</label>
+        <br>
+        <input type="date" id="rdate">
+        <br>
+        <label>Book count</label>
+        <br>
+        <input type="text" id="rcount">
+        <br>
+        <label>Paid Fine</label>
+        <br>
+        <input type="text" id="rfine">
+        <br>
+        <label>Status</label>
+        <br>
+        <input type="text" id="rstatus">
+        <br>
+        <input type="submit" value="submit" onclick="editing()">
+    </div>
+</body>
+</html>
