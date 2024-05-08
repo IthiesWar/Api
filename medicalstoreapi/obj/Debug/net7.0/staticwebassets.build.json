@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "5KpFSppGoNFCzKief+XAlt5syQdmvSQ34pDOHH7m8q8=",
+  "Source": "medicalstoreapi",
+  "BasePath": "_content/medicalstoreapi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
